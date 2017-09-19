@@ -28,6 +28,7 @@
 #import "cocos2d.h"
 #include "chipmunk.h"
 #include "drawSpace.h"
+#import <OpenGLES/EAGL.h>
 
 /*
 	IMPORTANT - READ ME!
@@ -246,11 +247,11 @@ static void
 drawPolyShape(cpBody *body, cpPolyShape *poly, cpSpace *space)
 {
 	int count = poly->numVerts;
-#if CP_USE_DOUBLES
-	glVertexPointer(2, GL_DOUBLE, 0, poly->tVerts);
-#else
-	glVertexPointer(2, GL_FLOAT, 0, poly->tVerts);
-#endif
+//#if CP_USE_DOUBLES
+//	glVertexPointer(2, double, 0, poly->tVerts);
+//#else
+//	glVertexPointer(2, float, 0, poly->tVerts);
+//#endif
 	
 	// Default GL states: GL_TEXTURE_2D, GL_VERTEX_ARRAY, GL_COLOR_ARRAY, GL_TEXTURE_COORD_ARRAY
 	// Needed states:  GL_VERTEX_ARRAY, 

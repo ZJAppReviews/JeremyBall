@@ -361,6 +361,7 @@
 		60ECFD4C1548F2AC00956541 /* Champ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 60ECFD4B1548F2AC00956541 /* Champ.mp3 */; };
 		60ECFD4E1548F2B800956541 /* Menu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 60ECFD4D1548F2B800956541 /* Menu.mp3 */; };
 		60ECFD501548F2BD00956541 /* Sexy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 60ECFD4F1548F2BD00956541 /* Sexy.mp3 */; };
+		840441471F70AAC500A94978 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840441461F70AAC500A94978 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -901,6 +902,7 @@
 		60ECFD4B1548F2AC00956541 /* Champ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Champ.mp3; sourceTree = "<group>"; };
 		60ECFD4D1548F2B800956541 /* Menu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Menu.mp3; sourceTree = "<group>"; };
 		60ECFD4F1548F2BD00956541 /* Sexy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sexy.mp3; sourceTree = "<group>"; };
+		840441461F70AAC500A94978 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1058,6 +1060,7 @@
 				604C299314B64F6400AE09FB /* Resources */,
 				604C29A714B64F6400AE09FB /* libs */,
 				604C2B3C14B64F6700AE09FB /* Supporting Files */,
+				840441461F70AAC500A94978 /* LaunchScreen.storyboard */,
 			);
 			path = Hoops;
 			sourceTree = "<group>";
@@ -1895,9 +1898,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		604C297D14B64F6400AE09FB /* Jeremy Ball */ = {
+		604C297D14B64F6400AE09FB /* ball0 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 604C2B4E14B64F6700AE09FB /* Build configuration list for PBXNativeTarget "Jeremy Ball" */;
+			buildConfigurationList = 604C2B4E14B64F6700AE09FB /* Build configuration list for PBXNativeTarget "ball0" */;
 			buildPhases = (
 				604C297A14B64F6400AE09FB /* Sources */,
 				604C297B14B64F6400AE09FB /* Frameworks */,
@@ -1907,7 +1910,7 @@
 			);
 			dependencies = (
 			);
-			name = "Jeremy Ball";
+			name = ball0;
 			productName = Hoops;
 			productReference = 604C297E14B64F6400AE09FB /* Jeremy Ball.app */;
 			productType = "com.apple.product-type.application";
@@ -1917,6 +1920,14 @@
 /* Begin PBXProject section */
 		604C297514B64F6400AE09FB /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					604C297D14B64F6400AE09FB = {
+						DevelopmentTeam = 25EA3KAABR;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
 			buildConfigurationList = 604C297814B64F6400AE09FB /* Build configuration list for PBXProject "Jeremy Ball" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -1929,7 +1940,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				604C297D14B64F6400AE09FB /* Jeremy Ball */,
+				604C297D14B64F6400AE09FB /* ball0 */,
 			);
 		};
 /* End PBXProject section */
@@ -1972,6 +1983,7 @@
 				607679B2154CB9E400C3335C /* ChampionBackground-hd.png in Resources */,
 				607679B4154CBA1600C3335C /* ChampionBackground.png in Resources */,
 				607679BA154CC6A100C3335C /* BigChampJeremy.png in Resources */,
+				840441471F70AAC500A94978 /* LaunchScreen.storyboard in Resources */,
 				607679D0154CDFA600C3335C /* BigChampJeremy-hd.png in Resources */,
 				607E9ADE154DF78800BCDAB0 /* exit-hd.png in Resources */,
 				607E9ADF154DF78800BCDAB0 /* exitclick-hd.png in Resources */,
@@ -2341,19 +2353,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Chai-Chun Chen (385E4FL8UW)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chai-Chun Chen (385E4FL8UW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 25EA3KAABR;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Hoops/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = Hoops/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-lz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haha.ball0;
 				PRODUCT_NAME = "Jeremy Ball";
-				PROVISIONING_PROFILE = "8CD48394-97FF-440E-9067-352F3B652FB8";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8CD48394-97FF-440E-9067-352F3B652FB8";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "\"Hoops/libs/Chipmunk/include/chipmunk\"";
 				WRAPPER_EXTENSION = app;
@@ -2364,18 +2380,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Chai-Chun Chen";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Chai-Chun Chen";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 25EA3KAABR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Hoops/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = Hoops/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-lz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haha.ball0;
 				PRODUCT_NAME = "Jeremy Ball";
-				PROVISIONING_PROFILE = "0585D404-418C-47E8-86FE-C57FA6B5A4B1";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0585D404-418C-47E8-86FE-C57FA6B5A4B1";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "\"Hoops/libs/Chipmunk/include/chipmunk\"";
 				VALIDATE_PRODUCT = YES;
@@ -2395,7 +2416,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		604C2B4E14B64F6700AE09FB /* Build configuration list for PBXNativeTarget "Jeremy Ball" */ = {
+		604C2B4E14B64F6700AE09FB /* Build configuration list for PBXNativeTarget "ball0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				604C2B4F14B64F6700AE09FB /* Debug */,
